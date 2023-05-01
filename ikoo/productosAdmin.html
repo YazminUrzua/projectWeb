@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Registro de productos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.php" class="logo">IKOO</a>
+                
+                <ul class="nav-list">
+                    
+                    <li class="nav-item">
+                        <a href="panel.html" class="nav-link active">Volver</a>
+                    </li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <form action="productos.php" method="POST">
+
+        
+        <p>
+            <label for="nombre_prod">Nombre del producto: </label><br/>
+            <input type="text" name="nombre_prod" id="nombre_prod" required="obligatorio" placeholder="Ingrese nombre del producto" class="field" required>
+        </p>
+
+        <p>
+            <label for="marca">Marca: </label><br/>
+            <input type="text" name="marca" id="marca" required="obligatorio" placeholder="Ingrese la marca" class="field" required>
+        </p>
+
+        <p>
+            <label for="precio">Precio: </label><br/>
+            <input type="text" name="precio" id="precio" required="obligatorio" placeholder="Ingrese el precio"class="field" required>
+        </p>
+
+        <p>
+            <label for="imagen">url: </label><br/>
+            <input type="text" name="imagen" id="imagen" required="obligatorio" placeholder="Ingrese la url"class="field" required>
+        </p>
+
+        <p>
+            <label for="descripcion">Descripcion del producto: </label><br/>
+            <input type="text" name="descripcion" id="descripcion" required="obligatorio" placeholder="Ingrese descripcion del producto"class="field" required>
+        </p>
+<br>
+
+        <button type="submit" name="registrar" class="btn cta-btn">Registrar</button>
+       
+   
+    </form>
+
+
+</body>
+
+
+
+</html>
+

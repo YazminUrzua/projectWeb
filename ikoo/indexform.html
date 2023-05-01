@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.php" class="logo">IKOO</a>
+                
+                <ul class="nav-list">
+                    
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="productosUs.php" class="nav-link ">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link ">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <form action="formulario.php" method="POST">
+
+        
+        <p>
+            <label for="nombre">Nombre: </label><br/>
+            <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Ingrese su nombre" class="field" required>
+        </p>
+
+        <p>
+            <label for="correo">Correo: </label><br/>
+            <input type="text" name="correo" id="correo" required="obligatorio" placeholder="Ingrese su email" class="field" required>
+        </p>
+
+        <p>
+            <label for="telefono">Teléfono: </label><br/>
+            <input type="text" name="telefono" id="telefono" required="obligatorio" placeholder="Ingrese su telefono"class="field" required>
+        </p>
+
+        <p>
+            <label for="direccion">Direccion: </label><br/>
+            <input type="text" name="direccion" id="direccion" required="obligatorio" placeholder="Ingrese su direccion" class="field" required>
+        </p>
+         
+        <p>
+            <label for="pass">Password: </label><br/>
+            <input type="password" name="pass" id="pass" required="obligatorio" placeholder="Ingrese un nuevo password" class="field" required>
+           
+            <br><br/>
+        </p>
+
+        <button type="submit" name="registrar" class="btn cta-btn">Registrar</button>
+       
+ 
+      <p>
+        <br>
+        <a href="login.html" class="nav-link active">¿Ya tienes cuenta?</a>
+      </p>
+   
+    </form>
+
+
+</body>
+
+
+
+</html>
+

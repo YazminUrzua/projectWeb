@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.php" class="logo">IKOO</a>
+                
+                <ul class="nav-list">
+                    
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="productosUs.php" class="nav-link ">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="indexform.html" class="nav-link ">Sign up</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <form action="login.php" method="POST">
+
+
+        <p>
+            <label for="username">Usuario: </label><br/>
+            <input type="text" name="username" id="username" required="obligatorio" placeholder="Ingrese su nombre de usuario" class="field">
+        </p>
+
+        <p>
+            <label for="contraseña">Contraseña: </label><br/>
+            <input type="password" name="contraseña" id="contraseña" required="obligatorio" placeholder="Ingrese su contraseña"class="field">
+        </p>  <br><br/>
+
+
+        <button type="submit" name="login" class="btn cta-btn">Login</button>
+       
+
+      <p>
+        <br>
+        <a href="indexform.html" class="nav-link active">¿Aún no tienes cuenta?</a>
+      </p>
+   
+    </form>
+</body>
+</html>
+
